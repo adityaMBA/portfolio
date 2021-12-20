@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145075360-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145075360-2');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style-about.css">
+    </head>
+<body>
+    <div class="container">
+            <header>
+                    <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt=""></a></h1>
+                    <input type="checkbox" class="nav-toggle" id="nav-toggle">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="hobbies.html">Hobbies</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <label for="nav-toggle" class="nav-toggle-label">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                </header>
+        <div class="desig">
+            <h1>Aditya Pandey</h1>
+           <p>Hey, I live by the quote, "Learning never exhausts the mind". I like reading books (except textbooks of course).
+  I like to code as well(ok, googling). Stories and Rhymes mesmerise me. So, obviously, I pretend being a poet. I am also a MBA student at IIM Kashipur.</p>
+        </div>
+        <div class="photo">
+            <img src="images/adi (2).jpg" alt="img">
+        </div>
+    </div>
+    <div class="skills">
+        <h1><i class="fas fa-tools"></i></h1>
+        <div class="skills-container">
+        <div class="tools">
+            <h3>Tools</h3>
+            <div>
+            <span>MS-EXCEL</span>
+            <span>MS-Powerpoint</span>
+            <span>VS Code</span>
+            <span>Netlify</span>
+            <span>Github</span>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Skills</h3>
+            <div class="skill-container">
+                    <div class="cover">
+                        <div class="logo">
+                         <i class="fab fa-html5" title="HTML-5"></i>
+                        </div>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="cover">
+                           <div class="logo">
+                                <i class="fab fa-css3-alt" title="CSS3"></i>
+                           </div>
+                           <p>CSS3</p>
+                    </div>
+                    <div class="cover">
+                        <div class="logo">
+                            <i class="fab fa-js-square" title="Javascript"></i>
+                        </div>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="cover">
+                        <div class="logo">
+                            <i class="fab fa-python" title="Responsive Design"></i>
+                        </div>
+                        <p>Python</p>
+                    </div>
+                    <div class="cover">
+                        <div class="logo">
+                            <i class="fas fa-money-check-alt"></i>
+                        </div>
+                        <p>Accountancy</p>
+                    </div>
+        </div>
+        </div>
+        </div>
+    </div>
+        <div class="projects">
+            <h1>My Work</h1>
+           <div class="project">
+            <div class="projects-inner zero">
+                <div class="project-heading"><h4>Author's Website</h4></div>
+                <div class="project-button"> <button><a target="_blank" href="https://iimgroot.netlify.app/">Go To Live Page</a></button>  </div>
+        </div>
+            <div class="projects-inner one">
+                    <div class="project-heading"><h4>Electronic Library for Books</h4></div>
+                   <div class="project-button"> <button><a target="_blank" href="https://startreading.herokuapp.com/">Go To Live Page</a></button></div>
+            </div>
+            <div class="projects-inner two">
+                    <div class="project-heading"><h4>Javascript Documentation</h4></div>
+                    <div class="project-button"> <button><a target="_blank" href="https://aditya-pandey.github.io/js-documentation/">Go To Live Page</a></button>  </div>
+            </div>
+            <div class="projects-inner three">
+                    <div class="project-heading"><h4>Music Player</h4></div>
+                    <div class="project-button"> <button><a target="_blank" href="https://insane.netlify.com/">Go To Live Page</a></button>  </div>
+            </div>
+            <div class="projects-inner four">
+                    <div class="project-heading"><h4>Number And Dates Fact</h4></div>
+                    <div class="project-button"> <button><a target="_blank" href="http://www.aditya-pandey.me/numfact/">Go To Live Page</a></button>  </div>
+            </div>
+            <div class="projects-inner five">
+                    <div class="project-heading"><h4>Book Store landing Page</h4></div>
+                    <div class="project-button"> <button><a target="_blank" href="https://www.aditya-pandey.me/landing-page/">Go To Live Page</a></button>  </div>
+            </div>
+           </div>
+        </div>
+ <div class="footer">
+    Aditya &copy 2019. Trademarks
+</div>
+        <script src="all.js"></script>
+        <script>
+        const div1  =document.querySelector(".skill");
+        const div2  = document.querySelector(".tools");
+        const sill = document.querySelectorAll(".inner");
+        console.log(sill);
+        function scrollIn(){
+            let x = window.scrollY > div1.offsetTop-0.5*div1.offsetTop;
+            let y = window.scrollY > div2.offsetTop-0.6*div2.offsetTop;
+            if(x){
+                div1.classList.add("slide");
+                for(let i=0;i<sill.length;i++){
+                    sill[i].style.animation = "filling 3s";
+               }
+            }
+            else{
+                div1.classList.remove("slide");
+                for(let i=0;i<sill.length;i++){
+                    sill[i].style.animation = "1s";
+               }
+            }
+            if(y){
+                div2.classList.add("slide1");
+            }
+            else{
+                div2.classList.remove("slide1");
+            }
+        }
+       window.addEventListener("scroll",scrollIn);
+        </script>
+</body>
+</html>

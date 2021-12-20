@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+body{
+    background: blanchedalmond;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 7px;
+    }
+    ::-webkit-scrollbar-thumb{
+    background:gray;
+    }
+    ::-webkit-scrollbar-track{
+    background: lightgrey;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+    background: #555;
+    }
+
+.reading{
+    width: 100%;
+    background:linear-gradient(to right, rgb(142, 158, 171), rgb(238, 242, 243));
+    min-height: 80vh;
+    padding-top: 50px;
+    color: var(--clr-dark);
+}
+.quote{
+    background: rgba(9, 19, 75, 0.781);
+    width: 70vw;
+    margin: 0 auto;
+    font-size: 1.3em;
+    padding: 20px;
+    border-radius: 10px;
+    color: lightyellow;
+}
+.book{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+   /* width: 70vw;*/
+    margin: 0 auto;
+    height: 50vh;
+    border-radius: 10px;
+}
+.item{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px black;
+}
+.item1{
+    background: url("images/1984.jpg") no-repeat center center/cover;
+}
+.item2{
+    background: url("images/kite-runner.jpeg") no-repeat center center/cover;
+}
+.item3{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 1.5em;
+    background: whitesmoke;
+}
+.fab{
+    font-size: 1.8em;
+    color: #553b08;
+}
+.poems{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    background:#363434;
+}
+.poem{
+    width: 90%;
+    background:#393e46;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#ddd;
+}
+.poems > .waqt{
+    min-height: 100vh;
+}
+.poems > .vaade{
+    min-height: 100vh;
+}
+.poems > .other-one{
+    min-height: 80vh;
+}
+.poem > p{
+    width: 80%;
+    line-height: 1.5;
+    margin: 0 auto;
+    background: #454545;
+    padding: 25px 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #000000
+}
+.poem > h2{
+    text-align: center;
+    font-weight: bold;
+}
+h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color:var(--clr-dark);
+   font-family: 'Nunito', sans-serif;
+}
+.others{
+    padding-top: 20px;
+    min-height:60vh;
+    background: linear-gradient(145deg, rgb(142, 158, 171), rgb(238, 242, 243));;
+    margin: 0;
+}
+.other{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.other img{
+    width: 100%;
+    height:70%;
+    background-repeat: no-repeat;
+    background-origin: center;
+    background-position: center;
+    border-radius: 5px;
+}
+.other div{
+    max-width: 300px;
+    height: 40vh;
+    background: rgba(16, 68, 92, 0.5);
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px black;
+    color: whitesmoke;
+    padding-bottom: 10px;
+}
+.other h4{
+    margin: 10px auto;
+}
+.other a{
+    color: white;
+    text-decoration: none;
+}
+.others h1{
+    margin: 0;
+    padding: 20px 0;
+}
+.others::before{
+    content:"";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.footer{
+    height: 40px;
+    text-align: center;
+    background: #4c4040;
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.poems h1{
+color:var(--clr-light);
+}
+
+@media screen and (max-width:600px){
+    .book{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70vw;
+    margin: 0 auto;
+    height: 100vh;
+}
+.quote{
+    min-height: 13vh;
+}
+.item{
+    width: 150px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px black;
+}
+
+h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.other{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.poem{
+    width: 90vw;
+}
+.other img{
+    height: 70%;
+}
+.other div{
+    width: 250px;
+    min-height: 40vh;
+    margin-bottom: 20px;
+}
+
+}

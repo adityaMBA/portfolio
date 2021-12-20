@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-145075360-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-145075360-2");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:title" content="Aditya Pandey" />
+    <meta property="og:url" content="https://adityapandey.tech" />
+    <meta
+      property="og:description"
+      content="A Commerce and Business Student with love for Science and Technology."
+    />
+    <meta property="og:image" content="https://insane.imfast.io/A%20D%20I%20T%20Y%20A.png" />
+   <meta name="twitter:card" content="summary" />
+   <meta name="twitter:site" content="https://adityapandey.tech" />
+   <meta name="twitter:title" content="Aditya Pandey" />
+   <meta name="twitter:description" content="A Commerce and Business Student with love for Science and Technology" />
+   <meta name="twitter:image:src" content="https://insane.imfast.io/A%20D%20I%20T%20Y%20A.png" />
+   <link rel="icon" href="https://insane.imfast.io/A%20D%20I%20T%20Y%20A.png" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hamburger">
+      <a><i class="fas fa-bars"></i></a>
+    </div>
+    <div class="menu-container">
+      <div class="menu">
+        <div class="menu-items">
+          <div>
+            <ul>
+              <a href="#"><li>HOME</li></a>
+              <a href="about.html"><li>ABOUT</li></a>
+              <a href="hobbies.html"><li>HOBBIES</li></a>
+              <a href="contact.html"><li>CONTACT</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main" id="particles-js">
+      <div class="container">
+        <div class="main-text">
+          HELLO!!, I AM ADITYA<br />
+          <span class="subtext">Student, Poet, Programmer, Reader</span><br />
+        </div>
+        <div class="main-button">
+          <a href="about.html"><p>About Me → </p></a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const ham = document.querySelector(".hamburger");
+      const hamClose = document.querySelector(".hamburgerClose");
+      const menuContainer = document.querySelector(".menu-container");
+      const main = document.querySelector(".main");
+      const menu = document.querySelector(".menu");
+      const maniButton = document.querySelector(".main-button");
+      let disp = true;
+      ham.addEventListener("click", () => {
+        if (disp) {
+          ham.innerHTML = "<a><i class='fas fa-times'></i></a>";
+          main.style.color = "rgba(255,255,255,0.3)";
+          disp = false;
+          menu.style.transform = "scale(1)";
+          menuContainer.style.visibility = "inherit";
+        } else {
+          //menu.style.transform = "rotate(0deg)";
+          ham.innerHTML = "<a><i class='fas fa-bars'></i></a>";
+          main.style.color = "white";
+          disp = true;
+          menu.style.transform = "scale(0)";
+          menuContainer.style.visibility = "hidden";
+        }
+      });
+    </script>
+  </body>
+</html>
